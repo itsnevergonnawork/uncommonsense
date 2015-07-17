@@ -19,7 +19,7 @@ layout: default
 </div>
 <div class="days-info-box">
     {% for post in site.posts %}
-        <a href="{{ post.url }}" class="day-info">
+        <a href="{{ post.url  | prepend: site.baseurl }}" class="day-info">
             {{ post.content }}
         </a>
     {% endfor %}
