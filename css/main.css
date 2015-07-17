@@ -1,0 +1,185 @@
+html, body {
+    width: 100%;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    background: #fff;
+    color: #000;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.70;
+}
+
+.page-content {
+    position: relative;
+    width: 100%;
+}
+
+#uncommon-bkgnd {
+    width: 100%;
+    height: 0;
+    padding-bottom: 70.94606%;
+    background-image: url('../img/uncommonsense.svg');
+    background-size: 100%;
+}
+
+#key-date,
+#key-location,
+#key-contact {
+    padding: 1em 0;
+    text-align: center;
+}
+
+#key-date {
+    padding-top: 2em;
+}
+
+.day-inner {
+    padding: 1em;
+}
+
+.day-inner h2 {
+    margin: 0.66667em 0;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.day-inner h3 {
+    margin: 0.8em 0;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+.post-content {
+    margin: 1em auto;
+    padding: 0 1em;
+    max-width: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+    #uncommon-bkgnd {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #key-facts-box {
+        position: relative;
+        height: 0;
+        padding-bottom: 70.94606%;
+    }
+    
+    #key-facts {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #key-date,
+    #key-location,
+    #key-contact {
+        position: absolute;
+        padding: 0;
+        width: 25%;
+        height: 25%;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    #key-date:before,
+    #key-location:before,
+    #key-contact:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    #key-date {
+        top: 0;
+        left: 0;
+    }
+
+    #key-location {
+        top: 50%;
+        left: 25%;
+    }
+
+    #key-contact {
+        top: 75%;
+        left: 75%;
+    }
+
+    .key-inner {
+        max-width: 95%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .days-info-box {
+        clear: both;
+    }
+    
+    .day-info {
+        display: block;
+        position: relative;
+        float: left;
+        width: 25%;
+        height: 0;
+        padding: 0;
+        padding-bottom: 17.73651%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .day-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1em 12%;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .day-inner h2 {
+        margin: 0.2em 0 0;
+    }
+
+    .day-inner h3 {
+        margin: 0.5em 0;
+    }
+
+    .day-inner p {
+        position: absolute;
+        top: 6em;
+        bottom: 1em;
+        left: 12%;
+        right: 12%;
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

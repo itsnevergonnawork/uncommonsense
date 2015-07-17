@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div id="uncommon-bkgnd">
+</div>
+<div id="key-facts-box">
+    <div id="key-facts">
+        <div id="key-date">
+            <span class="key-inner">20 jul 2015</span>
+        </div>
+        <div id="key-location">
+            <span class="key-inner">da place</span>
+        </div>
+        <div id="key-contact">
+            <span class="key-inner">dempeople@itsnevergonna.work</span>
+        </div>
+    </div>
+</div>
+<div class="days-info-box">
+    {% for post in site.posts %}
+        <a href="{{ post.url }}" class="day-info">
+            {{ post.content }}
+        </a>
+    {% endfor %}
+</div>
