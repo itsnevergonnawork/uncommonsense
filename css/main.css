@@ -63,15 +63,33 @@ a:hover {
 }
 
 .day-inner h3 {
-    margin: 0.8em 0;
-    font-size: 1.25em;
+    position: relative;
+    margin: 1.25em 0;
+    font-size: 1em;
     font-weight: normal;
 }
 
-.post-content {
-    margin: 1em auto;
-    padding: 0 1em;
+.post-content .day-inner h3 {
+    margin: 1.75em auto 1em;
     max-width: 100%;
+    font-size: 1.25em;
+}
+
+.event-time {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4em;
+    text-align: right;
+}
+
+.event-title {
+    display: inline-block;
+    padding-left: 4.5em;
+}
+
+.post-content p {
+    line-height: 1.4em;
 }
 
 
@@ -169,17 +187,15 @@ a:hover {
     }
 
     .day-inner h3 {
-        margin: 0.5em 0;
+        position: relative;
+        margin: 1em 0;
+    }
+
+    .post-content .day-inner h3 {
+        margin: 1.75em 0 1em;
     }
 
     .day-inner p {
-        position: absolute;
-        top: 6em;
-        bottom: 1em;
-        left: 12%;
-        right: 12%;
         margin: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 }

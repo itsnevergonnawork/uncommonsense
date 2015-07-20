@@ -3,7 +3,10 @@
     {% include head.html %}
     <body>
         <div class="post-content">
-            {{ content }}
+            <div class="day-inner">
+                <h2>{{ page.date | date: "%d %b %Y" }}</h2>
+                {{ content }}
+            </div>
         </div>
     </body>
 </html>
